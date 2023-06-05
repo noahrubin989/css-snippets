@@ -1,0 +1,15 @@
+body {
+    font-family: 'Geologica', sans-serif;
+}
+
+h1 {
+    color: rgb(0, 135, 0);
+}
+
+ul {
+    font-size: 14px;
+}
+
+.list-item {
+    font-size: 0.75em;  /* 0.75 x (font size of parent) = 10.5 */
+}
