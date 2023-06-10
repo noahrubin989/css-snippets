@@ -1,0 +1,15 @@
+button {
+    background-color: transparent;
+    border: 1px black solid;
+    background-color: black;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+button a:hover {
+    color: rgb(200, 200, 200); /* Change the color on hover if desired */
+}
