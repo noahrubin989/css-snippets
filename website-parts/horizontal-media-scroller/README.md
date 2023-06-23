@@ -1,6 +1,7 @@
 # Video
 
-Here is the [video](https://www.youtube.com/watch?v=3yfswsnD2sw) used for this media scroller
+- Here is the [video](https://www.youtube.com/watch?v=3yfswsnD2sw) used for this media scroller
+- This is also useful for [custom scrollbars](https://www.youtube.com/watch?v=lvKK2fs6h4I)
 
 ## Grid
 
