@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Media Scroller</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header-section">
+        <header>
+            <h1>Horizontal Scrolling</h1>
+            <p class="mb-0">Let's create a horizontal media scroller</p>
+        </header>
+    </section>
+
+    <section class="scroller-section">
+        <h2>Individual Elements</h2>
+        <!-- See here for snaps-inline: https://youtu.be/3yfswsnD2sw?t=955 -->
+        <div class="media-scroller snaps-inline">
+            <div class="media-element">
+                <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                <!-- Can place lots more text with no issues -->
+                <p>London</p>
+            </div>
+            <div class="media-element">
+                <img src="https://www.thetrainline.com/cms/media/1360/france-eiffel-tower-paris.jpg?mode=crop&width=1080&height=1080&quality=70" alt="paris">
+                <p>Paris</p>
+            </div>
+            <div class="media-element">
+                <img src="https://lp-cms-production.imgix.net/2023-03/GettyImages-965936498.jpg?auto=format&w=730&h=630&fit=crop&q=75" alt="amsterdam">
+                <p>Amsterdam</p>
+            </div>
+            <div class="media-element">
+                <img src="https://i0.wp.com/dymabroad.com/wp-content/uploads/2020/12/View-of-Warsaw-at-night.jpg?ssl=1" alt="warsaw">
+                <p>Warsaw</p>
+            </div>
+            <div class="media-element">
+                <img src="https://www.travelanddestinations.com/wp-content/uploads/2022/06/Vltava-river-in-Prague-at-night.jpeg" alt="prague">
+                <p>Prague</p>
+            </div>
+            <div class="media-element">
+                <img src="https://www.travelanddestinations.com/wp-content/uploads/2022/09/Berlin-at-night.jpg" alt="berlin">
+                <p>Berlin</p>
+            </div>
+            <div class="media-element">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/36/37/32/caption.jpg?w=700&h=500&s=1" alt="budapest">
+                <p>Budapest</p>
+            </div>
+            <div class="media-element">
+                <img src="https://content.r9cdn.net/rimg/dimg/02/2a/38330eba-city-25578-17f66349256.jpg?width=1366&height=768&xhint=1490&yhint=1292&crop=true" alt="bucharest">
+                <p>Bucharest</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Groups of content -->
+
+    <!-- Still a media scroller  -->
+    <section class="group-scroller">
+        <h2>Groups Elements</h2>
+        <!-- modifier class -->
+        <div class="media-scroller media-scroller--with-groups snaps-inline">
+            <!-- Group 1 -->
+            <div class="media-group">
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+            </div>
+
+            <!-- Group 2 -->
+            <div class="media-group">
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+            </div>
+
+            <!-- Group 3 -->
+            <div class="media-group">
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>                </div>
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+            </div>
+
+            <!-- Group 4 -->
+            <div class="media-group">
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>                </div>
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+            </div>
+
+            <!-- Group 4 -->
+            <div class="media-group">
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>                </div>
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+            </div>
+
+            <!-- Group 4 -->
+            <div class="media-group">
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>                </div>
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+            </div>
+
+            <!-- Group 4 -->
+            <div class="media-group">
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>                </div>
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+                <div class="media-element">
+                    <img src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70" alt="london"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+</body>
+</html>

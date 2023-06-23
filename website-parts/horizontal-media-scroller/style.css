@@ -1,0 +1,116 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+
+/* Customising the scrollbar */
+.media-scroller::-webkit-scrollbar {
+    width: 0.7em;
+    height: 0.7em;
+}
+
+.media-scroller::-webkit-scrollbar-track {
+    /* background: rgb(168, 225, 168); */
+    border-radius: 100vw; /* pill looking scroll */
+    
+}
+
+.media-scroller::-webkit-scrollbar-thumb {
+    background: rgb(233,189,254);
+    background: linear-gradient(180deg, rgba(233,189,254,0.861782212885154) 0%, rgba(188,134,255,1) 100%);
+    border: .1em solid rgb(0, 0, 0);
+    border-radius: 100vw;
+}
+
+.media-scroller::-webkit-scrollbar-thumb:hover {
+    background: rgb(98, 127, 255);
+}
+
+
+body {
+    background: rgb(171,171,171);
+    background: linear-gradient(180deg, rgba(171,171,171,0.861782212885154) 0%, rgba(99,99,99,1) 100%);
+}
+
+section {
+    padding: 20px;
+}
+
+.header-section {
+    background: rgb(44,53,57);
+    background: linear-gradient(180deg, rgba(44,53,57,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-bottom: 20px;
+}
+
+
+/* Scroller section */
+.scroller-section {
+    /* any other styles here */
+}
+
+
+.media-scroller {
+    /* could use flexbox */
+
+    /* Locally scoped property */
+    --_spacer: var(--size-3);
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 22.5%; /* see md file for why we don't use factors of 100 */
+    gap: var(--_spacer);  /* openprop offers this for convinience */
+
+    overflow-x: auto; 
+    overscroll-behavior-inline: contain; /* comment and uncomment */
+}
+
+.media-element {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--_spacer);
+    padding: var(--_spacer);
+    background: var(--surface-2);
+    border-radius: var(--radius-2);
+
+    box-shadow: var(--shadow-2); /* Hard to see but it works */
+}
+
+.media-element > img {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.media-element > p {
+    margin-bottom: 0;
+}
+
+/* THIS IS COOL. Watch how it snaps to the beginning of the card when you */
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+}
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+
+/* Media group section */
+.media-group {
+    /* border: 5px solid green; */
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--_spacer);
+}
+
+.media-scroller--with-groups {
+    /* border: 5px solid black; */
+    grid-auto-columns: 80%;
+}
+
